@@ -1,0 +1,162 @@
+/* ==========================================================
+   元件樣式 (css/components.css)
+   說明：內容區塊、卡片、表格、圖片、地圖與分頁按鈕。
+   ========================================================== */
+
+/* 1. 文章章節盒子 */
+section {
+    margin: 0 0 24px;
+    padding: 24px 28px;
+    background-color: #fffaf0;
+    border: 1px solid #e2d5bd;
+    border-radius: 6px;
+}
+
+/* 2. 卡片排列：用 Grid 排成兩欄或三欄 */
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.three-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    padding: 18px;
+    background-color: #f8f1e3;
+    border: 1px solid #e2d5bd;
+    border-radius: 6px;
+}
+
+.card h3 {
+    margin-top: 10px;
+}
+
+/* 強調用的綠色卡片（帝國製糖廠） */
+.card.highlight {
+    background-color: #7d9168;
+    color: #fffaf0;
+}
+
+.number {
+    color: #b66d3b;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* 3. SWOT 四個區塊的顏色 */
+.swot-s { background-color: #e3ead3; }
+.swot-w { background-color: #f3dcd3; }
+.swot-o { background-color: #ddecea; }
+.swot-t { background-color: #f6e2cf; }
+
+/* 4. 重點句 */
+.quote {
+    padding-left: 14px;
+    border-left: 4px solid #7d9168;
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+mark {
+    background-color: #f6df9d;
+    color: #3d3028;
+    padding: 2px 6px;
+}
+
+/* 5. 表格樣式 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95em;
+    overflow-wrap: anywhere;
+}
+
+caption {
+    margin-bottom: 12px;
+    text-align: left;
+    font-weight: bold;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #e2d5bd;
+    text-align: left;
+    vertical-align: top;
+}
+
+thead {
+    background-color: #7d9168;
+    color: #fffaf0;
+}
+
+/* 目標客群那一列 */
+.target-row {
+    background-color: #e3ead3;
+    font-weight: bold;
+}
+
+/* 6. 圖片與嵌入地圖 */
+figure {
+    margin: 18px 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+figcaption {
+    margin-top: 10px;
+    color: #786b5f;
+    font-size: 0.85em;
+}
+
+iframe {
+    display: block;
+    max-width: 100%;
+    border: 0;
+    border-radius: 4px;
+}
+
+.map-frame {
+    width: 100%;
+    height: 340px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* 7. 分頁按鈕 */
+.pagination {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.pagination li {
+    display: inline-block;
+    margin: 4px;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 6px 14px;
+    background-color: #fffaf0;
+    border: 1px solid #e2d5bd;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: #b66d3b;
+    color: #fffaf0;
+}

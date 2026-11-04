@@ -1,0 +1,43 @@
+/* ==========================================================
+   響應式樣式 (css/rwd.css)
+   說明：視窗變窄時，把多欄改成一欄，手機也能看到完整內容。
+   ========================================================== */
+
+/* 1. 平板：側邊欄移到主內容下方 */
+@media (max-width: 860px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .three-col {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* 2. 手機：全部改成一欄 */
+@media (max-width: 600px) {
+    body {
+        padding: 16px 12px;
+        font-size: 16px;
+    }
+
+    header, section {
+        padding: 20px 16px;
+    }
+
+    h1 {
+        font-size: 1.65rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .two-col, .three-col {
+        grid-template-columns: 1fr;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}

@@ -1,0 +1,81 @@
+/* ==========================================================
+   基本樣式 (css/base.css)
+   說明：全頁共用的文字、標題、段落與連結樣式。
+   ========================================================== */
+
+/* 1. 盒子尺寸與全頁文字 */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px 24px;
+    font-family: "Microsoft JhengHei", "PingFang TC", sans-serif;
+    font-size: 17px;
+    line-height: 1.85;
+    color: #3d3028;
+    background-color: #f3ead8;
+}
+
+/* 2. 標題與段落 */
+h1 {
+    margin: 0 0 16px;
+    font-size: 2rem;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+}
+
+h2 {
+    margin: 0 0 18px;
+    padding-left: 12px;
+    border-left: 4px solid #b66d3b;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+h3 {
+    margin: 22px 0 10px;
+    font-size: 1.1rem;
+}
+
+p {
+    margin: 12px 0;
+}
+
+ul, ol {
+    padding-left: 1.6em;
+}
+
+li {
+    margin: 8px 0;
+}
+
+small {
+    font-size: 0.85em;
+    font-style: normal;
+}
+
+hr {
+    margin: 26px 0;
+    border: 0;
+    border-top: 1px solid #e2d5bd;
+}
+
+/* 3. 連結 */
+a {
+    color: #8b4938;
+    text-underline-offset: 4px;
+    overflow-wrap: anywhere;
+}
+
+a:hover {
+    color: #b66d3b;
+    text-decoration: underline;
+}
+
+a:focus-visible {
+    outline: 3px solid #b66d3b;
+    outline-offset: 4px;
+}

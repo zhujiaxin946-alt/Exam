@@ -1,0 +1,95 @@
+/* ==========================================================
+   版面樣式 (css/layout.css)
+   說明：頁首、導覽列、Grid 版面（主內容＋側邊欄）與頁尾。
+   ========================================================== */
+
+/* 1. 頁首樣式 */
+header {
+    padding: 28px 36px;
+    background-color: #596747;
+    color: #fffaf0;
+    border-top: 6px solid #b66d3b;
+    border-radius: 6px;
+}
+
+header p {
+    margin: 10px 0;
+}
+
+.site-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.site-name a {
+    color: #fffaf0;
+    text-decoration: none;
+}
+
+/* 2. 導覽列：把清單排成一列按鈕 */
+nav ul {
+    margin: 0 0 20px;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 4px 6px 4px 0;
+}
+
+nav a {
+    display: inline-block;
+    padding: 6px 14px;
+    background-color: #fffaf0;
+    border: 1px solid #e2d5bd;
+    border-radius: 4px;
+    color: #3d3028;
+    text-decoration: none;
+}
+
+/* 目前所在的頁面 */
+nav a.active {
+    background-color: #b66d3b;
+    border-color: #b66d3b;
+    color: #fffaf0;
+}
+
+/* 3. Grid 版面：左邊主內容、右邊側邊欄（3 : 1） */
+.wrapper {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+/* 4. 側邊欄 */
+.sidebar section {
+    margin: 0 0 20px;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    font-size: 1.1rem;
+}
+
+.sidebar ul {
+    padding-left: 1.2em;
+}
+
+.slogan {
+    background-color: #7d9168;
+    color: #fffaf0;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* 5. 頁尾 */
+footer {
+    margin-top: 32px;
+    padding: 20px 0;
+    border-top: 2px solid #b66d3b;
+    color: #786b5f;
+    text-align: center;
+}
