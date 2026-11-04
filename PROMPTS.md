@@ -103,6 +103,6 @@ https://github.com/zhujiaxin946-alt/HW07_D1420558
 
 ## 繳交連結
 
-1. Prompt 說明（本檔案）：`https://github.com/<帳號>/<repo>/blob/main/PROMPTS.md`
+1. Prompt 說明（本檔案）：https://github.com/zhujiaxin946-alt/Exam/blob/main/PROMPTS.md
 2. InfinityFree 網址：`https://<自己的網址>.infinityfreeapp.com/`
-3. Vercel 網址：`https://<專案名稱>.vercel.app/`
+3. Vercel 網址：https://exam-d1420558.vercel.app/

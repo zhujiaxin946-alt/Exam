@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# 部署後把網址換成自己的 Vercel 或 InfinityFree 網址
-Sitemap: https://YOUR-SITE.vercel.app/sitemap.xml
+Sitemap: https://exam-d1420558.vercel.app/sitemap.xml
